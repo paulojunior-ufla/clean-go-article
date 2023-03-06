@@ -10,8 +10,9 @@ Como pessoas desenvolvedoras, às vezes, somos tentados(as) a escrever código d
 
 Este documento começa com uma introdução simples e breve sobre os fundamentos da escrita de código limpo. Posteriormente, nós discutiremos exemplos concretos de refatorações específicas para a linguagem Go.
 
-##### A short word on `gofmt`
-I'd like to take a few sentences to clarify my stance on `gofmt` because there are plenty of things I disagree with when it comes to this tool. I prefer snake case over camel case, and I quite like my constant variables to be uppercase. And, naturally, I also have many opinions on bracket placement. *That being said*, `gofmt` does allow us to have a common standard for writing Go code, and that's a great thing. As a developer myself, I can certainly appreciate that Go programmers may feel somewhat restricted by `gofmt`, especially if they disagree with some of its rules. But in my opinion, homogeneous code is more important than having complete expressive freedom.
+##### Uma breve palavra sobre `gofmt`
+
+Eu gostaria de dizer algumas palavras para esclarecer minha posição sobre `gofmt`, pois há muitas coisas das quais eu discordo quando se trata desta ferramenta. Eu prefiro *snake case* a *camel case* e eu gosto muito que o nome de minhas constantes estajam em maiúsculo. E, natualmente, eu também tenho muitas opiniões a respeito do posicionamento de chaves. *Dito isso*, `gofmt` nos permite ter um padrão comum para escrever código Go e isto é ótimo. Como desenvolver, eu entendo que programadores Go possam se sentir restringidos pelo `gofmt`, especialmente se eles discordam de algumas de suas regras. Mas, na minha opinião, código homogêneo é mais importante do que ter total liberdade de expressão. 
 
 ## Table of Contents
 * [Introduction to Clean Code](#Introduction-to-Clean-Code)
