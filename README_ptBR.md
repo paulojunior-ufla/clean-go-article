@@ -2,7 +2,7 @@
 
 ## Prefácio: Por que escrever Código Limpo?
 
-Este documento é uma referência para a comunidade Go, o qual tem como objetivo ajudar pessoas desenvolvedoras a escrever códigos mais limpos. Se você está trabalhando em um projeto pessoal ou como parte de uma equipe maior, escrever código limpo é uma habilidade importante de se ter. Estabeler bons paradigmas e padrões consistentes e acessíveis para escrever código limpo pode evitar que pessoas desenvolvedoras desperdicem muitas horas, sem sentido, tentanto entender seu próprio trabalho (ou o dos outros).  
+Este documento é uma referência para a comunidade Go, o qual tem como objetivo ajudar pessoas desenvolvedoras a escrever códigos mais limpos. Se você está trabalhando em um projeto pessoal ou como parte de uma equipe maior, escrever código limpo é uma habilidade importante de se ter. Estabelecer bons paradigmas e padrões consistentes e acessíveis para escrever código limpo pode evitar que pessoas desenvolvedoras desperdicem muitas horas, sem sentido, tentando entender seu próprio trabalho (ou o dos outros).  
 
 > <em>Nós não lemos código, nós o <b>decodificamos</b> &ndash; Peter Seibel</em>
 
@@ -12,10 +12,10 @@ Este documento começa com uma introdução simples e breve sobre os fundamentos
 
 ##### Uma breve palavra sobre `gofmt`
 
-Eu gostaria de dizer algumas palavras para esclarecer minha posição sobre `gofmt`, pois há muitas coisas das quais eu discordo quando se trata desta ferramenta. Eu prefiro *snake case* a *camel case* e eu gosto muito que o nome de minhas constantes estajam em maiúsculo. E, natualmente, eu também tenho muitas opiniões a respeito do posicionamento de chaves. *Dito isso*, `gofmt` nos permite ter um padrão comum para escrever código Go e isto é ótimo. Como desenvolver, eu entendo que programadores Go possam se sentir restringidos pelo `gofmt`, especialmente se eles discordam de algumas de suas regras. Mas, na minha opinião, código homogêneo é mais importante do que ter total liberdade de expressão. 
+Eu gostaria de dizer algumas palavras para esclarecer minha posição sobre `gofmt`, pois há muitas coisas das quais eu discordo quando se trata desta ferramenta. Eu prefiro *snake case* a *camel case* e eu gosto muito que o nome de minhas constantes estejam em maiúsculo. E, naturalmente, eu também tenho muitas opiniões a respeito do posicionamento de chaves. *Dito isso*, `gofmt` nos permite ter um padrão comum para escrever código Go e isto é ótimo. Como desenvolver, eu entendo que programadores Go possam se sentir restringidos pelo `gofmt`, especialmente se eles discordam de algumas de suas regras. Mas, na minha opinião, código homogêneo é mais importante do que ter total liberdade de expressão. 
 
 ## Table of Contents
-* [Introduction to Clean Code](#Introduction-to-Clean-Code)
+* [Introdução ao Código Limpo](#Introdução-ao-Código-Limpo)
     * [Test-Driven Development](#Test-Driven-Development)
     * [Naming Conventions](#Naming-Conventions)
     * * [Comments](#Comments)
@@ -37,9 +37,10 @@ Eu gostaria de dizer algumas palavras para esclarecer minha posição sobre `gof
     * [The Empty `interface{}`](#The-Empty-Interface)
 * [Summary](#Summary)
 
-## Introduction to Clean Code
+## Introdução ao Código Limpo
 
-Clean code is the pragmatic concept of promoting readable and maintainable software. Clean code establishes trust in the codebase and helps minimize the chances of careless bugs being introduced. It also helps developers maintain their agility, which typically plummets as the codebase expands due to the increased risk of introducing bugs.
+Código limpo é um conceito pragmático que visa promover produtos de software mais legíveis e manuteníveis. Código limpo promove confiança na base de código e ajuda a minimizar as chances de se introduzir defeitos cometidos por descuido. Ele também ajuda pessoas desenvolvedoras a manter sua agilidade, que normalmente cai à medida que a base de código cresce, devido ao aumento do risco de se introduzir defeitos.
+
 
 ### Test-Driven Development
 
